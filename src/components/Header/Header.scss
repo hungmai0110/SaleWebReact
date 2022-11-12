@@ -1,0 +1,139 @@
+.active {
+  color: #ddba76;
+  font-weight: 500;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+header a:hover {
+  color: #ddba76;
+}
+
+.header-infor {
+  height: 35px;
+  background-color: #b28564;
+  padding: 6px 50px;
+}
+
+.header-contact .phone {
+  padding-right: 30px;
+}
+
+.header-contact .phone span {
+  padding-right: 10px;
+}
+
+.header-contact .email span {
+  padding-right: 10px;
+}
+
+/* header-navbar */
+.header-navbar {
+  height: 80px;
+  padding: 10px 60px;
+  border-bottom: 1px solid #dcdcdc;
+  background: #fff;
+}
+
+.header-side-bar {
+  display: none;
+}
+
+.header-side-bar .close-pop-up {
+  position: absolute;
+  top: 4px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 111;
+}
+
+.header-side-bar ul li {
+  cursor: pointer;
+}
+
+.header-side-bar .home {
+  margin-top: 14px;
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.logo {
+  width: 70px;
+  height: 60px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* header tiêu đề */
+.list-menu {
+  height: 100%;
+  width: 670px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.type-products {
+  position: absolute;
+  width: 190px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  padding-bottom: 16px;
+  display: none;
+}
+
+.type-products li {
+  margin-top: 16px;
+}
+
+.header-navbar .list-menu .products:hover ul {
+  display: block;
+}
+
+.list-menu li {
+  font-size: 18px;
+  position: relative;
+}
+
+/* header icon */
+.icon-menu {
+  height: 100%;
+  width: 120px;
+  padding-right: 16px;
+}
+
+.icon-menu i {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.icon-menu .cart {
+  position: relative;
+}
+
+.icon-menu .cart-count {
+  position: absolute;
+  top: -15px;
+  left: 16px;
+  font-size: 12px;
+  background-color: #111;
+  color: #fff;
+}
+
+.cart-count p {
+  font-size: 14px;
+  margin: 0 auto;
+}

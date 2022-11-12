@@ -1,0 +1,49 @@
+@media (max-width: 1200px) {
+  .product {
+    margin: 20px 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  #utilities {
+    margin-top: 30px;
+    margin-right: 10px;
+  }
+
+  .shop-container .col-lg-3 {
+    position: fixed;
+    width: 250px;
+    left: -250px;
+    top: 0;
+    transition: 0.5s all ease;
+    z-index: 113;
+    background-color: #fff;
+    height: 100%;
+  }
+
+  .icon-filter {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    display: block !important;
+  }
+
+  .title h4 {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .filter-sort {
+    justify-content: center;
+  }
+
+  .list-all-products {
+    margin-top: 16px !important;
+  }
+}
+
+@media (max-width: 428px) {
+}

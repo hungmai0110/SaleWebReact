@@ -1,0 +1,190 @@
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .payment-container {
+    margin: 40px 60px;
+  }
+  
+  /* 2. Thông tin giao hàng  */
+  .infor-delivery span p {
+    color: #ddba76;
+    cursor: pointer;
+  }
+  
+  .form-fill {
+    padding: 0;
+  }
+  
+  .form-fill li {
+    margin-top: 4px;
+    margin-bottom: 12px;
+  }
+  
+  .form-fill input {
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    padding: 8px 10px;
+    border-radius: 4px;
+  }
+  
+  .form-fill .email {
+    width: 55%;
+  }
+  
+  .form-fill .phone {
+    width: 40%;
+  }
+  
+  .form-fill textarea {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #d9d9d9;
+    padding: 8px 10px;
+    resize: none;
+    margin-top: 4px;
+    border-radius: 4px;
+  }
+  
+  .pay-now {
+    width: 120px;
+    height: 40px;
+    border: 1px solid #e5e5e5;
+    background-color: #282727;
+    color: #fff;
+    margin: 0 !important;
+  }
+  
+  .pay-now:hover {
+    background-color: #484848;
+  }
+  
+  /* 3. Đơn hàng của bạn */
+  .my-order {
+    border: 1px solid #d9d9d9;
+    margin: 30px;
+  }
+  
+  .my-order p {
+    margin-bottom: 8px;
+  }
+  
+  .mini-cart-product-image {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .my-order-container {
+    margin: 30px;
+  }
+  
+  .count {
+    position: absolute;
+    top: -12px;
+    left: 80px;
+    border-radius: 50%;
+    background-color: #ddba76;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .count p {
+    margin-left: 10px;
+    margin-top: 2px;
+  }
+  
+  .discount-code {
+    height: 40px;
+  }
+  
+  .discount-code input {
+    padding-left: 15px;
+    width: 70%;
+  }
+  
+  .discount-code .btn-apply {
+    background-color: #282727;
+    color: #fff;
+    width: 25%;
+  }
+  
+  .discount-code .btn-apply:hover {
+    background-color: #fff;
+    color: #282727;
+  }
+  
+  @media (max-width: 992px) {
+    .payment-container {
+      margin: 40px 100px;
+    }
+  
+    .infor-delivery {
+      margin-bottom: 40px;
+    }
+  }
+  @media (max-width: 768px) {
+    .payment-container {
+      margin: 40px 60px;
+    }
+  
+    .my-order {
+      margin: 30px 0;
+    }
+  }
+  @media (max-width: 576px) {
+    .payment-container {
+      margin: 40px;
+    }
+  
+    .my-order {
+      margin-top: 20px;
+    }
+  
+    .my-order-container {
+      margin: 30px 15px;
+    }
+  
+    .mini-cart-product-content {
+      margin-left: 10px;
+    }
+  
+    .mini-cart-product p {
+      font-size: 14px;
+    }
+  
+    .mini-cart-product .text-danger {
+      display: none !important;
+    }
+  
+    .discount-code {
+      display: block !important;
+    }
+  
+    .discount-code input {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 16px;
+    }
+  
+    .btn-apply {
+      width: 100% !important;
+      height: 40px;
+    }
+  
+    .discount-code + hr {
+      margin-top: 80px;
+    }
+  }
+  @media (max-width: 428px) {
+    .payment-container {
+      margin: 30px;
+    }
+  
+    .my-order .total-money p {
+      font-size: 18px;
+    }
+  }
+  

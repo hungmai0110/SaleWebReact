@@ -1,0 +1,35 @@
+/* Ô tìm kiếm sản phẩm  */
+#search-pop-up {
+  position: fixed;
+  width: 400px;
+  top: 115px;
+  right: 50px;
+  border-radius: 4px;
+  background-color: #fff;
+  z-index: 109;
+}
+
+.input-group {
+  height: 40px;
+}
+
+.input-group input {
+  border: 1px solid #ededed;
+  padding-left: 10px;
+  width: 300px;
+}
+
+.input-group button {
+  border: 1px solid #ededed;
+  border-left: none;
+  width: 40px;
+}
+
+.input-group button:hover {
+  background: none;
+}
+
+.list-cart-wrapper {
+  overflow-y: auto;
+  height: 400px;
+}

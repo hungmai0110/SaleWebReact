@@ -1,0 +1,79 @@
+/* Giỏ hàng xem nhanh */
+#mini-cart {
+  position: fixed;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 4px;
+  background-color: #fff;
+  z-index: 110;
+}
+
+/* .mini-cart-product */
+.mini-cart-container {
+  padding: 20px 15px;
+}
+
+#mini-cart .close-pop-up {
+  position: absolute;
+  top: 0px;
+  right: 6px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.mini-cart-product .delete-product {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.mini-cart-product-image {
+  width: 80px;
+  height: 80px;
+}
+
+.mini-cart-container .tottal-money p {
+  font-size: 18px;
+}
+
+.mini-cart-product > p {
+  margin-bottom: 0;
+}
+
+.btn-minus-count {
+  cursor: pointer;
+}
+
+.btn-plus-count {
+  cursor: pointer;
+}
+
+#mini-cart button {
+  padding: 0 20px;
+  height: 40px;
+  border: 1px solid #282727;
+}
+
+.btn-view-shopping-cart {
+  background-color: #282727;
+  color: #fff;
+}
+
+.btn-view-shopping-cart:hover {
+  background-color: #fff;
+  color: #282727;
+}
+
+.btn-payment {
+  background-color: #fff;
+  color: #282727;
+}
+
+.btn-payment:hover {
+  background-color: #282727;
+  color: #fff;
+}

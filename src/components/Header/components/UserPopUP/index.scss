@@ -1,0 +1,60 @@
+/* Đăng nhập */
+#user {
+  position: fixed;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 4px;
+  background-color: #fff;
+  z-index: 110;
+}
+
+#user .close-pop-up {
+  position: absolute;
+  top: 0px;
+  right: 6px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.user-container {
+  padding: 20px 50px;
+}
+
+.user-container input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+.user-container button {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #282727;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  background-color: #282727;
+  color: #fff;
+}
+
+.user-container button:hover {
+  background-color: #fff;
+  color: #282727;
+}
+
+#user p {
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+#user p:hover {
+  color: #ddba76;
+}
+
+.subscribe-user,
+.pass-retrieval {
+  display: none;
+}
