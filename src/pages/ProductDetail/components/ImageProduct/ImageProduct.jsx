@@ -1,49 +1,57 @@
 import React from "react";
+import Slider from "react-slick";
 
-function ImageProduct() {
+function ImageProduct({ productItem }) {
+  const settings = {
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
+  console.log(productItem);
   return (
     <div className="col-lg-6">
       <div className="detail-item">
-        <div className="detail-image">
-          <img
-            src="../public/img/selling-products/Ví Da Bò Sáp Simple 01_1.jpg"
-            alt="1"
-          />
-        </div>
-        <div className="detail-image">
-          <img
-            src="../public/img/selling-products/Ví Da Bò Sáp Simple 01_2.jpg"
-            alt="2"
-          />
-        </div>
-        <div className="detail-image">
-          <img
-            src="../public/img/selling-products/Ví Da Bò Sáp Simple 01_3.jpg"
-            alt="3"
-          />
-        </div>
-        <div className="detail-image">
-          <img
-            src="../public/img/selling-products/Ví Cầm Tay Da Bò_1.jpg"
-            alt="4"
-          />
-        </div>
-        <div className="detail-image">
-          <img
-            src="../public/img/selling-products/Ví Cầm Tay Da Bò_2.jpg"
-            alt="5"
-          />
-        </div>
+        <Slider {...settings}>
+          {productItem.images.map((productImage) => {
+            <div className="detail-image">
+              <img src={productImage} alt="1" />
+            </div>;
+          })}
+        </Slider>
       </div>
       <div className="detail-slider mt-5">
         <div className="row">
           <div className="col-12">
             <div className="detail-slider-item">
               <div className="detail-slider-image">
-                <img
-                  src="../public/img/selling-products/Ví Da Bò Sáp Simple 01_1.jpg"
-                  alt="1"
-                />
+                <img src={productItem.images[0]} alt="1" />
               </div>
             </div>
           </div>

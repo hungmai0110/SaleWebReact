@@ -25,6 +25,14 @@ const productsApi = {
     const url = `/products?q=${value}`;
     return axiosClient.get(url);
   },
+  getProductCart() {
+    const url = `/carts`;
+    return axiosClient.get(url);
+  },
+  addProductCart(data) {
+    const url = `/carts`;
+    return axiosClient.post(url, data);
+  },
 };
 
 export default productsApi;

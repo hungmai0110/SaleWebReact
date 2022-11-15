@@ -4,8 +4,23 @@ import InfoProduct from "./components/InfoProduct/InfoProduct";
 import "./ProductDetail.scss";
 import { Link } from "react-router-dom";
 import RelatedProducts from "./components/RelatedProducts/RelatedProducts";
+import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import productsApi from "api/productsApi";
+import { isEmpty } from "utils/utils";
 
 function ProductDetail() {
+  const { productId } = useParams();
+  const [productItem, setProductItem] = useState({});
+
+  useEffect(() => {
+    productsApi.getProductById(productId).then((data) => {
+      setProductItem(data);
+    });
+  }, []);
+
+  console.log(productItem);
+
   return (
     <>
       {/* < 1. Đường dẫn */}
@@ -24,9 +39,13 @@ function ProductDetail() {
         <div className="detail-product-container">
           <div className="row">
             {/* < Ảnh sản phẩm */}
-            <ImageProduct />
-            {/* < Thông tin sản phẩm */}
-            <InfoProduct />
+            {!isEmpty(productItem) && (
+              <>
+                <ImageProduct productItem={productItem} />
+                {/* < Thông tin sản phẩm */}
+                <InfoProduct productItem={productItem} />
+              </>
+            )}
           </div>
         </div>
       </div>

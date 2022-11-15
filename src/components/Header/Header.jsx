@@ -5,11 +5,13 @@ import logo from "image/logo.png";
 import SearchPopUp from "./components/SearchPopUp/index";
 import UserPopUP from "./components/UserPopUP/index";
 import MiniCart from "./components/MiniCart/index";
+import { useSelector } from "react-redux";
 
 function Header() {
   const [isShowSearch, setIsShowSearch] = useState(false);
   const [isShowUser, setIsShowUser] = useState(false);
   const [isShowMiniCart, setIsShowMiniCart] = useState(false);
+  const productsCart = useSelector((state) => state.cart.cartItems);
 
   return (
     <header>
@@ -102,7 +104,7 @@ function Header() {
               <i className="fa-solid fa-cart-shopping"></i>
             </span>
             <span className="cart-count border rounded-2 px-1">
-              <p>2</p>
+              <p>{productsCart.length}</p>
             </span>
           </div>
         </div>

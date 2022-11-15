@@ -1,10 +1,12 @@
 import ShopReducer from "pages/Shop/ShopSlice";
 import { configureStore } from "@reduxjs/toolkit";
+import cartSlice from "components/Header/components/MiniCart/cartSlice";
 
 const store = configureStore({
-    reducer: {
-        shop: ShopReducer
-    }
-})
+  reducer: {
+    shop: ShopReducer,
+    cart: cartSlice,
+  },
+});
 
-export default store
+export default store;

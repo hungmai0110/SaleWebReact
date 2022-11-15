@@ -1,26 +1,32 @@
 import React from "react";
+import { formatMoney } from "utils/utils";
 
-function InfoProduct() {
+function InfoProduct({ productItem }) {
   return (
     <div className="col-lg-6">
       <div className="product-infor">
-        <h3>Ví Da Bò Sáp Simple 01</h3>
+        <h3>{productItem.name}</h3>
         <span className="product-status d-flex">
           Tình trạng:
           <p className="text-danger mx-2 mb-1">Còn hàng</p>
         </span>
         <div className="product-price d-flex align-items-center">
-          <h4 className="text-danger">550.000 VNĐ</h4>
+          <h4 className="text-danger">
+            {formatMoney(productItem.promo_price)}
+          </h4>
           <p className="initial-price text-decoration-line-through mx-3">
-            660.000 VNĐ
+            {formatMoney(productItem.price)}
           </p>
           <div className="discount">
-            <p className="text-white">-17%</p>
+            <p className="text-white">{productItem.discount}</p>
           </div>
         </div>
         <span className="saving-money d-flex">
           (Tiết kiệm
-          <p className="text-danger mx-1">110.000</p>)
+          <p className="text-danger mx-1">
+            {formatMoney(productItem.price - productItem.promo_price)}
+          </p>
+          )
         </span>
         <div className="promo-content">
           <div className="promo-content-title d-flex text-danger">
