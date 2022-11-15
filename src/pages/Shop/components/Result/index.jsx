@@ -9,6 +9,7 @@ function Result() {
 
   useEffect(() => {
     productsApi.getProducts().then((data) => {
+      console.log(data)
       setProducts(data);
     });
   }, []);

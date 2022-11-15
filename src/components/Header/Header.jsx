@@ -45,7 +45,7 @@ function Header() {
 
         <ul className="list-menu d-flex align-items-center justify-content-between">
           <li>
-            <NavLink to="/">TRANG CHỦ</NavLink>
+            <NavLink end to="/">TRANG CHỦ</NavLink>
           </li>
           <li>
             <NavLink to="/gioi-thieu">GIỚI THIỆU</NavLink>

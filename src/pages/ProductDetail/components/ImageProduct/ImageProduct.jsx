@@ -39,11 +39,11 @@ function ImageProduct({ productItem }) {
     <div className="col-lg-6">
       <div className="detail-item">
         <Slider {...settings}>
-          {productItem.images.map((productImage) => {
-            <div className="detail-image">
+          {productItem.images.map((productImage) => (
+            <div key={productItem.id} className="detail-image">
               <img src={productImage} alt="1" />
-            </div>;
-          })}
+            </div>
+          ))}
         </Slider>
       </div>
       <div className="detail-slider mt-5">

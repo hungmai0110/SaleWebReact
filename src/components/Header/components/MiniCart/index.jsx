@@ -29,7 +29,7 @@ function MiniCart({ setIsShowMiniCart }) {
           <hr />
 
           <div className="list-cart-products">
-            {productsCart.map((product) => {
+            {productsCart.map((product) => (
               <div
                 key={product.id}
                 className="mini-cart-product d-flex justify-content-between position-relative"
@@ -63,8 +63,8 @@ function MiniCart({ setIsShowMiniCart }) {
                 <p className="text-danger d-flex align-items-center">
                   {formatMoney(product.price)}
                 </p>
-              </div>;
-            })}
+              </div>
+            ))}
           </div>
 
           <div className="tottal-money d-flex justify-content-between">
