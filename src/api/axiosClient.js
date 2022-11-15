@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosClient = axios.create({
-    baseURL: 'http://localhost:3001',
+    baseURL: 'https://leather-goods-website.herokuapp.com/',
     headers: { 'Content-type': 'application/json; charset=UTF-8' }
 });
 

@@ -15,28 +15,6 @@ import Profile from "pages/private/Profile/index";
 import OrderHistory from "pages/private/OrderHistory/index";
 import SecurityAccount from "pages/private/SecurityAccount/index";
 
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyCmDxnxBRQbDVHdg5LyZSDnoA_YSgKqs8s",
-  authDomain: "saleweb-a5ebc.firebaseapp.com",
-  projectId: "saleweb-a5ebc",
-  storageBucket: "saleweb-a5ebc.appspot.com",
-  messagingSenderId: "374295971354",
-  appId: "1:374295971354:web:e079e9132c5014633ab3a3",
-  measurementId: "G-JKMLBQBPVB",
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
 function App() {
   return (
     <>
